@@ -1,0 +1,92 @@
+/* src/pages/Home.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero Background */
+.hero-section {
+  background: url('/src/images/Home.png') no-repeat center center/cover;
+  width: 100%;
+  height: 88vh;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Big Title */
+.main-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #2183d8;
+  margin-top: 3rem;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+}
+
+/* Subtitle */
+.sub-heading {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: #31a1d8;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Hover Bubble */
+.hover-bubble {
+  position: absolute;
+  background: white;
+  color: #2183d8;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 4px solid #2183d8;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 20;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.home-btn {
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.user-btn {
+  background-color: #0066cc;
+}
+
+.admin-btn {
+  background-color: #00994d;
+}
+
+.user-btn:hover {
+  background-color: #004d99;
+}
+
+.admin-btn:hover {
+  background-color: #007a3d;
+}
