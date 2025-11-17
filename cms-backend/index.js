@@ -5,7 +5,12 @@ const cors = require("cors");
 const { createClient } = require("@supabase/supabase-js");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://canteen-management-system-beta.vercel.app",
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Supabase client (make sure .env has SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY)
