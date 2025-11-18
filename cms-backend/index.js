@@ -6,7 +6,7 @@ const { createClient } = require("@supabase/supabase-js");
 
 const app = express();
 app.use(cors({
-  origin: "https://canteen-management-system-beta.vercel.app",
+  origin: ["https://canteen-management-system-beta.vercel.app"],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   credentials: true
 }));
